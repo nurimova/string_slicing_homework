@@ -1,284 +1,248 @@
-# Welcome
-# String Slicing
+# Xush kelibsiz  
+# Matnni kesish (String Slicing)
 
-Automated grading of homework assignments and tests
-- fork this repository
-- solve the task
-- commit with proper message
+Uy vazifalari va testlarni avtomatlashtirilgan baholash  
+- Ushbu repozitoriyani fork qiling  
+- Vazifani yeching  
+- To‘g‘ri xabar bilan commit qiling  
 
-# Problems
-## Slicing01
+# Masalalar  
 
-  The s string variable is given. return the four characters from the beginning.
+---
 
-**Example 1:**
+## Slicing01  
 
-```Python
-Input: a="codeschooluz"
-Output: "code"
+  `s` matn o‘zgaruvchisi berilgan. Matnning boshidan to‘rtta belgi qaytarilsin.  
 
-```
-
-**Example 2:**
+**Misol 1:**  
 
 ```Python
-Input: a="code"
-Output: "code"
-
+Kiritish: a="itmarkaz"  
+Natija: "itma"  
 ```
 
-**Constraints:**
-
-  - 4 <= length(a) <= 10^5
-
-## Slicing02
-
-  The s string variable is given. return four characters from the end.
-
-**Example 1:**
+**Misol 2:**  
 
 ```Python
-Input: a="codeschooluz"
-Output: "oluz"
-
+Kiritish: a="code"  
+Natija: "code"  
 ```
 
-**Example 2:**
+**Cheklovlar:**  
+  - 4 <= uzunlik(a) <= 10^5  
+
+---
+
+## Slicing02  
+
+  `s` matn o‘zgaruvchisi berilgan. Matnning oxiridan to‘rtta belgi qaytarilsin.  
+
+**Misol 1:**  
 
 ```Python
-Input: a="python"
-Output: "thon"
-
+Kiritish: a="itmarkaz"  
+Natija: "rkaz"  
 ```
 
-**Constraints:**
-
-  - 4 <= length(a) <= 10^5
-
-## Slicing03
-
-  The s string variable is given. Return all characters except the one at the beginning and end.
-
-**Example 1:**
+**Misol 2:**  
 
 ```Python
-Input: a="hello"
-Output: "ell"
-
+Kiritish: a="python"  
+Natija: "thon"  
 ```
 
-**Example 2:**
+**Cheklovlar:**  
+  - 4 <= uzunlik(a) <= 10^5  
+
+---
+
+## Slicing03  
+
+  `s` matn o‘zgaruvchisi berilgan. Matnning boshidan va oxiridan boshqa barcha belgilarni qaytarilsin.  
+
+**Misol 1:**  
 
 ```Python
-Input: a="positive"
-Output: "ositiv"
-
+Kiritish: a="itmarkaz"  
+Natija: "tmarka"  
 ```
 
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
-
-## Slicing03
-
-  The s string variable is given. Return all characters except the one at the beginning and end.
-
-**Example 1:**
+**Misol 2:**  
 
 ```Python
-Input: a="hello"
-Output: "ell"
-
+Kiritish: a="hello"  
+Natija: "ell"  
 ```
 
-**Example 2:**
+**Cheklovlar:**  
+  - 2 <= uzunlik(a) <= 10^5  
+
+---
+
+## Slicing04  
+
+  `s` matn o‘zgaruvchisi berilgan. Matnning boshidan `n` ta belgi qaytarilsin.  
+
+**Misol 1:**  
 
 ```Python
-Input: a="positive"
-Output: "ositiv"
-
+Kiritish: a="itmarkaz", n=3  
+Natija: "itm"  
 ```
 
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
-
-## Slicing04
-
-  The s string variable is given. return n characters from the beginning.
-
-**Example 1:**
+**Misol 2:**  
 
 ```Python
-Input: a="negative", n=2
-Output: "ne"
-
+Kiritish: a="positive", n=2  
+Natija: "po"  
 ```
 
-**Example 2:**
+**Cheklovlar:**  
+  - 2 <= uzunlik(a) <= 10^5  
+  - 1 <= n <= uzunlik(a)  
+
+---
+
+## Slicing05  
+
+  `s` matn o‘zgaruvchisi berilgan. Matnning oxiridan `n` ta belgi qaytarilsin.  
+
+**Misol 1:**  
 
 ```Python
-Input: a="positive" n=2
-Output: "po"
-
+Kiritish: a="itmarkaz", n=3  
+Natija: "kaz"  
 ```
 
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
-  - 1 <= n <= length(a)
-
-## Slicing05
-
-  The s string variable is given. return n characters from the end.
-
-**Example 1:**
+**Misol 2:**  
 
 ```Python
-Input: a="codeschooluz", n=3
-Output: "luz"
-
+Kiritish: a="positive", n=1  
+Natija: "e"  
 ```
 
-**Example 2:**
+**Cheklovlar:**  
+  - 2 <= uzunlik(a) <= 10^5  
+  - 1 <= n <= uzunlik(a)  
+
+---
+
+## Slicing06  
+
+  `s` matn o‘zgaruvchisi berilgan. Matnning boshidan `n` ta belgi olib tashlanib, qolgan qismi qaytarilsin.  
+
+**Misol 1:**  
 
 ```Python
-Input: a="positive" n=1
-Output: "e"
-
+Kiritish: a="itmarkaz", n=3  
+Natija: "arkaz"  
 ```
 
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
-  - 1 <= n <= length(a)
-
-## Slicing06
-
-  The s string variable is given. return all characters except n characters from the beginning.
-
-**Example 1:**
+**Misol 2:**  
 
 ```Python
-Input: a="codeschooluz", n=3
-Output: "eschooluz"
-
+Kiritish: a="apple", n=1  
+Natija: "pple"  
 ```
 
-**Example 2:**
+**Cheklovlar:**  
+  - 2 <= uzunlik(a) <= 10^5  
+  - 1 <= n <= uzunlik(a)  
+
+---
+
+## Slicing07  
+
+  `s` matn o‘zgaruvchisi berilgan. Matnning oxiridan `n` ta belgi olib tashlanib, qolgan qismi qaytarilsin.  
+
+**Misol 1:**  
 
 ```Python
-Input: a="apple" n=1
-Output: "pple"
-
+Kiritish: a="itmarkaz", n=3  
+Natija: "itmar"  
 ```
 
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
-  - 1 <= n <= length(a)
-
-## Slicing07
-
-  The s string variable is given. return all characters except n characters at the end.
-
-**Example 1:**
+**Misol 2:**  
 
 ```Python
-Input: a="codeschooluz", n=3
-Output: "codeschoo"
-
+Kiritish: a="apple", n=1  
+Natija: "appl"  
 ```
 
-**Example 2:**
+**Cheklovlar:**  
+  - 2 <= uzunlik(a) <= 10^5  
+  - 1 <= n <= uzunlik(a)  
+
+---
+
+## Slicing08  
+
+  `s` matn o‘zgaruvchisi berilgan. Toq o‘rinlardagi belgilarni qaytarilsin.  
+
+**Misol 1:**  
 
 ```Python
-Input: a="apple" n=1
-Output: "appl"
-
+Kiritish: a="itmarkaz"  
+Natija: "imra"  
 ```
 
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
-  - 1 <= n <= length(a)
-
-## Slicing08
-
-  The s string variable is given. return the characters in the odd position.
-
-**Example 1:**
+**Misol 2:**  
 
 ```Python
-Input: a="codeschooluz"
-Output: "oecolz"
-
+Kiritish: a="apple"  
+Natija: "pl"  
 ```
 
-**Example 2:**
+**Cheklovlar:**  
+  - 2 <= uzunlik(a) <= 10^5  
+
+---
+
+## Slicing09  
+
+  `s` matn o‘zgaruvchisi berilgan. Juft o‘rinlardagi belgilarni qaytarilsin.  
+
+**Misol 1:**  
 
 ```Python
-Input: a="apple"
-Output: "pl"
-
+Kiritish: a="itmarkaz"  
+Natija: "trakz"  
 ```
 
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
-  - 1 <= n <= length(a)
-
-## Slicing09
-
-  The s string variable is given. return the characters in the even position.
-
-**Example 1:**
+**Misol 2:**  
 
 ```Python
-Input: a="codeschooluz"
-Output: "cdshou"
-
+Kiritish: a="apple"  
+Natija: "ape"  
 ```
 
-**Example 2:**
+**Cheklovlar:**  
+  - 2 <= uzunlik(a) <= 10^5  
+
+---
+
+## Slicing10  
+
+  `s` matn o‘zgaruvchisi berilgan. `n` dan `k` gacha bo‘lgan indekslardagi belgilarni qaytarilsin.  
+
+**Misol 1:**  
 
 ```Python
-Input: a="apple"
-Output: "ape"
-
+Kiritish: a="itmarkaz", n=2, k=5  
+Natija: "mark"  
 ```
 
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
-  - 1 <= n <= length(a)
-
-## Slicing10
-
-  The s string variable is given. return from index n to index k.
-
-**Example 1:**
+**Misol 2:**  
 
 ```Python
-Input: a="codeschooluz" n=2 k=5
-Output: "des"
-
+Kiritish: a="apple", n=2, k=2  
+Natija: "p"  
 ```
 
-**Example 2:**
+**Cheklovlar:**  
+  - 2 <= uzunlik(a) <= 10^5  
+  - 0 <= n <= uzunlik(a)  
+  - n <= k <= uzunlik(a)  
 
-```Python
-Input: a="apple" n=2 k=2
-Output: "p"
+---
 
-```
-
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
-  - 0 <= n <= length(a)
-  - n <= k <= length(a)
-
-# Warning
-- don't copy other solutions or any solution
-- don't remove comments
