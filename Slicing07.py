@@ -7,4 +7,7 @@ def main(s,n):
     Returns:
         str: answer
     """
-    return
+    return s[0:len(s)-n:1]
+s='python'
+n=3
+print(main(s,n))

@@ -7,4 +7,7 @@ def main(s,n):
     Returns:
         str: answer
     """
-    return
+    return s[0:n:1]
+s='It_Markaz'
+n=4
+print(main(s,n))
